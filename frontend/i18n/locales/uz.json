@@ -1,0 +1,149 @@
+{
+  "university": {
+    "short": "SamDU",
+    "name": "Samarqand davlat universiteti",
+    "fullName": "Sharof Rashidov nomidagi Samarqand davlat universiteti",
+    "tagline": "1927-yildan buyon bilim va ilm-fan markazi",
+    "address": "140104, Samarqand sh., Universitet xiyoboni, 15-uy",
+    "workHours": "Du–Ju: 09:00 – 18:00"
+  },
+  "topbar": {
+    "accessibility": "Maxsus imkoniyatlar",
+    "search": "Qidiruv",
+    "language": "Til"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "news": "Yangiliklar",
+    "announcements": "E'lonlar",
+    "faculties": "Fakultetlar",
+    "about": "Universitet haqida",
+    "menu": "Menyu",
+    "close": "Yopish"
+  },
+  "hero": {
+    "prev": "Oldingi slayd",
+    "next": "Keyingi slayd",
+    "goTo": "{n}-slaydga o'tish"
+  },
+  "home": {
+    "newsTitle": "So'nggi yangiliklar",
+    "newsSubtitle": "Universitet hayotidagi muhim voqealar",
+    "allNews": "Barcha yangiliklar",
+    "announcementsTitle": "E'lonlar",
+    "allAnnouncements": "Barcha e'lonlar",
+    "facultiesTitle": "Fakultetlar",
+    "facultiesSubtitle": "Zamonaviy ta'lim yo'nalishlari va ilmiy maktablar",
+    "allFaculties": "Barcha fakultetlar",
+    "statsTitle": "SamDU raqamlarda",
+    "quickLinksTitle": "Tezkor havolalar"
+  },
+  "quickLinks": {
+    "admission": "Qabul",
+    "admissionText": "Abituriyentlar uchun ma'lumot",
+    "faculties": "Fakultetlar",
+    "facultiesText": "Ta'lim yo'nalishlari",
+    "science": "Ilmiy faoliyat",
+    "scienceText": "Tadqiqotlar va konferensiyalar",
+    "international": "Xalqaro aloqalar",
+    "internationalText": "Hamkorlik va almashinuv"
+  },
+  "stats": {
+    "years": "Yillik tarix",
+    "students": "Talabalar",
+    "faculties": "Fakultetlar",
+    "departments": "Kafedralar",
+    "teachers": "Professor-o'qituvchilar",
+    "partners": "Xalqaro hamkorlar"
+  },
+  "news": {
+    "title": "Yangiliklar",
+    "readMore": "Batafsil",
+    "views": "{n} marta ko'rildi",
+    "empty": "Hozircha yangiliklar yo'q",
+    "back": "Yangiliklarga qaytish",
+    "related": "Boshqa yangiliklar",
+    "allCategories": "Barchasi",
+    "categories": {
+      "general": "Umumiy",
+      "university": "Universitet",
+      "science": "Ilm-fan",
+      "international": "Xalqaro",
+      "student-life": "Talabalar hayoti"
+    }
+  },
+  "announcements": {
+    "title": "E'lonlar",
+    "empty": "Hozircha e'lonlar yo'q",
+    "back": "E'lonlarga qaytish",
+    "eventDate": "Sana",
+    "deadline": "Muddat",
+    "location": "Manzil",
+    "pinned": "Muhim",
+    "allTypes": "Barchasi",
+    "types": {
+      "notice": "Xabarnoma",
+      "event": "Tadbir",
+      "admission": "Qabul",
+      "conference": "Konferensiya",
+      "vacancy": "Vakansiya"
+    }
+  },
+  "faculties": {
+    "title": "Fakultetlar",
+    "dean": "Dekan",
+    "departments": "Kafedralar",
+    "departmentsCount": "{n} ta kafedra",
+    "students": "{n} talaba",
+    "contacts": "Aloqa",
+    "back": "Fakultetlarga qaytish",
+    "empty": "Fakultetlar topilmadi"
+  },
+  "a11y": {
+    "title": "Maxsus imkoniyatlar",
+    "fontSize": "Shrift o'lchami",
+    "normal": "Oddiy",
+    "large": "Katta",
+    "xlarge": "Juda katta",
+    "mode": "Ko'rinish rejimi",
+    "grayscale": "Oq-qora",
+    "contrast": "Yuqori kontrast",
+    "hideImages": "Rasmlarsiz",
+    "reset": "Asl holatga qaytarish"
+  },
+  "search": {
+    "title": "Qidiruv",
+    "placeholder": "Sayt bo'yicha qidirish...",
+    "submit": "Qidirish",
+    "results": "\"{q}\" bo'yicha natijalar",
+    "nothing": "Hech narsa topilmadi",
+    "hint": "Kamida 2 ta belgi kiriting"
+  },
+  "footer": {
+    "about": "Sharof Rashidov nomidagi Samarqand davlat universiteti — O'zbekistonning yetakchi klassik universitetlaridan biri.",
+    "contacts": "Aloqa",
+    "usefulLinks": "Foydali havolalar",
+    "sections": "Bo'limlar",
+    "followUs": "Ijtimoiy tarmoqlar",
+    "rights": "Barcha huquqlar himoyalangan."
+  },
+  "about": {
+    "title": "Universitet haqida",
+    "intro": "Samarqand davlat universiteti 1927-yilda tashkil topgan va bugungi kunda mamlakatimizning eng yirik oliy ta'lim muassasalaridan biri hisoblanadi.",
+    "historyTitle": "Tarix",
+    "history": "Universitet Oliy pedagogika instituti sifatida faoliyat boshlagan, 1933-yilda universitet maqomini olgan. O'tgan davr mobaynida yuz minglab mutaxassislar tayyorlangan.",
+    "missionTitle": "Missiya",
+    "mission": "Raqobatbardosh kadrlar tayyorlash, fundamental va amaliy tadqiqotlarni rivojlantirish hamda jamiyat taraqqiyotiga hissa qo'shish."
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "error": "Ma'lumotlarni yuklashda xatolik yuz berdi",
+    "retry": "Qayta urinish",
+    "notFound": "Sahifa topilmadi",
+    "notFoundText": "Siz qidirayotgan sahifa mavjud emas yoki ko'chirilgan.",
+    "goHome": "Bosh sahifaga",
+    "prev": "Oldingi",
+    "next": "Keyingi",
+    "page": "{n}-sahifa"
+  }
+}

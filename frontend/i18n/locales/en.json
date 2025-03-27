@@ -1,0 +1,149 @@
+{
+  "university": {
+    "short": "SamSU",
+    "name": "Samarkand State University",
+    "fullName": "Samarkand State University named after Sharof Rashidov",
+    "tagline": "A centre of knowledge and science since 1927",
+    "address": "15 University Boulevard, Samarkand 140104, Uzbekistan",
+    "workHours": "Mon–Fri: 09:00 – 18:00"
+  },
+  "topbar": {
+    "accessibility": "Accessibility",
+    "search": "Search",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Home",
+    "news": "News",
+    "announcements": "Announcements",
+    "faculties": "Faculties",
+    "about": "About",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "prev": "Previous slide",
+    "next": "Next slide",
+    "goTo": "Go to slide {n}"
+  },
+  "home": {
+    "newsTitle": "Latest news",
+    "newsSubtitle": "Key events in university life",
+    "allNews": "All news",
+    "announcementsTitle": "Announcements",
+    "allAnnouncements": "All announcements",
+    "facultiesTitle": "Faculties",
+    "facultiesSubtitle": "Modern programmes and research schools",
+    "allFaculties": "All faculties",
+    "statsTitle": "SamSU in numbers",
+    "quickLinksTitle": "Quick links"
+  },
+  "quickLinks": {
+    "admission": "Admissions",
+    "admissionText": "Information for applicants",
+    "faculties": "Faculties",
+    "facultiesText": "Study programmes",
+    "science": "Research",
+    "scienceText": "Studies and conferences",
+    "international": "International",
+    "internationalText": "Partnerships and exchange"
+  },
+  "stats": {
+    "years": "Years of history",
+    "students": "Students",
+    "faculties": "Faculties",
+    "departments": "Departments",
+    "teachers": "Academic staff",
+    "partners": "International partners"
+  },
+  "news": {
+    "title": "News",
+    "readMore": "Read more",
+    "views": "{n} views",
+    "empty": "No news yet",
+    "back": "Back to news",
+    "related": "More news",
+    "allCategories": "All",
+    "categories": {
+      "general": "General",
+      "university": "University",
+      "science": "Science",
+      "international": "International",
+      "student-life": "Student life"
+    }
+  },
+  "announcements": {
+    "title": "Announcements",
+    "empty": "No announcements yet",
+    "back": "Back to announcements",
+    "eventDate": "Date",
+    "deadline": "Deadline",
+    "location": "Location",
+    "pinned": "Important",
+    "allTypes": "All",
+    "types": {
+      "notice": "Notice",
+      "event": "Event",
+      "admission": "Admissions",
+      "conference": "Conference",
+      "vacancy": "Vacancy"
+    }
+  },
+  "faculties": {
+    "title": "Faculties",
+    "dean": "Dean",
+    "departments": "Departments",
+    "departmentsCount": "{n} departments",
+    "students": "{n} students",
+    "contacts": "Contacts",
+    "back": "Back to faculties",
+    "empty": "No faculties found"
+  },
+  "a11y": {
+    "title": "Accessibility",
+    "fontSize": "Font size",
+    "normal": "Normal",
+    "large": "Large",
+    "xlarge": "Extra large",
+    "mode": "Display mode",
+    "grayscale": "Grayscale",
+    "contrast": "High contrast",
+    "hideImages": "No images",
+    "reset": "Reset"
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search the site...",
+    "submit": "Search",
+    "results": "Results for \"{q}\"",
+    "nothing": "Nothing found",
+    "hint": "Enter at least 2 characters"
+  },
+  "footer": {
+    "about": "Samarkand State University named after Sharof Rashidov is one of the leading classical universities of Uzbekistan.",
+    "contacts": "Contacts",
+    "usefulLinks": "Useful links",
+    "sections": "Sections",
+    "followUs": "Follow us",
+    "rights": "All rights reserved."
+  },
+  "about": {
+    "title": "About the university",
+    "intro": "Samarkand State University was founded in 1927 and is today one of the largest higher education institutions in the country.",
+    "historyTitle": "History",
+    "history": "The university began as the Higher Pedagogical Institute and received university status in 1933. Over the decades it has trained hundreds of thousands of specialists.",
+    "missionTitle": "Mission",
+    "mission": "To train competitive professionals, advance fundamental and applied research, and contribute to the development of society."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Failed to load data",
+    "retry": "Retry",
+    "notFound": "Page not found",
+    "notFoundText": "The page you are looking for does not exist or has been moved.",
+    "goHome": "Go home",
+    "prev": "Previous",
+    "next": "Next",
+    "page": "Page {n}"
+  }
+}
