@@ -30,6 +30,8 @@ Brauzer ──► Nuxt 4 SSR (3000) ──► NestJS API (4000) ──► Postgr
 | Statistika | `home/StatsSection.vue` | IntersectionObserver bilan animatsion hisoblagich |
 | Fakultetlar | `home/FacultiesSection.vue`, `faculties/FacultyCard.vue` | ikonka, kafedra/talaba soni |
 | Footer | `layout/TheFooter.vue` | bo'limlar, API'dagi footer menyusi, kontaktlar, ijtimoiy tarmoqlar |
+| Login | `pages/login.vue` (`blank` layout, `guest` middleware) | email/parol, parolni ko'rsatish, xato xabarlari, `?redirect=` |
+| Boshqaruv paneli | `pages/admin/index.vue` (`auth` middleware) | foydalanuvchi, rol, statistika, so'nggi yangiliklar, chiqish |
 | Umumiy UI | `ui/SectionTitle`, `ui/PageHero`, `ui/AppPagination`, `ui/StateMessage`, `ui/SkeletonCard`, `ui/MenuLink`, `ui/SocialIcon` | |
 
 ### Ma'lumot oqimi
@@ -39,6 +41,7 @@ Brauzer ──► Nuxt 4 SSR (3000) ──► NestJS API (4000) ──► Postgr
 | `plugins/api.ts` | `$api = $fetch.create({ baseURL })` — server/client uchun mos manzil, `Accept-Language` |
 | `composables/useApiFetch.ts` | `useFetch` + `$api` (Nuxt rasmiy "custom useFetch" pattern) |
 | `composables/useContent.ts` | `useNewsList`, `useNewsItem`, `useAnnouncementsList`, `useFaculties`, `useSlides` ... — `locale` reaktiv, til almashganda avtomatik qayta yuklanadi |
+| `stores/auth.ts` | JWT `samdu_token` cookie'da, `login`, `fetchMe`, `logout`. `$api` har so'rovga `Authorization: Bearer` qo'shadi, 401 da token o'chiriladi |
 | `stores/menu.ts` | menyular `location:lang` kaliti bilan keshlanadi (Pinia, SSR state hydration) |
 | `composables/useFormatDate.ts` | `Asia/Samarkand` vaqt zonasi, o'zbekcha oy nomlari — server va client natijasi bir xil (hydration mismatch yo'q) |
 

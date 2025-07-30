@@ -28,12 +28,22 @@ Bir necha daqiqadan so'ng:
 | Servis | Manzil |
 |--------|--------|
 | Sayt (Nuxt SSR) | http://localhost:3000 |
+| **Login sahifasi** | http://localhost:3000/login (`/ru/login`, `/en/login`) |
+| **Boshqaruv paneli** | http://localhost:3000/admin (faqat login qilinganda) |
 | REST API | http://localhost:4000/api |
 | Swagger UI | http://localhost:4000/api/docs |
 | OpenAPI JSON | http://localhost:4000/api/docs-json |
 | PostgreSQL | `localhost:5442` (user `samdu`, parol `samdu_secret`) |
 
 Standart admin: `admin@samdu.uz` / `Admin12345!` (`.env` da o'zgartiring).
+
+### 🔐 Tizimga kirish
+
+1. Saytning yuqori panelidagi **Kirish** tugmasini bosing yoki to'g'ridan-to'g'ri http://localhost:3000/login ga o'ting.
+2. Admin email va parolini kiriting → **/admin** boshqaruv paneli ochiladi (statistika, so'nggi yangiliklar, Swagger havolasi).
+3. Chiqish — paneldagi **Chiqish** tugmasi.
+
+Login qilmasdan `/admin` ga kirilsa, avtomatik `/login?redirect=/admin` ga yo'naltiriladi. Kontentni yaratish/tahrirlash hozircha Swagger UI orqali (to'liq CRUD admin interfeysi — keyingi bosqich, [docs/ROADMAP.md](docs/ROADMAP.md)).
 
 Birinchi ishga tushishda backend jadvallarni yaratadi va demo ma'lumotlarni (slaydlar, yangiliklar, e'lonlar, 10 ta fakultet, ko'p darajali menyu) avtomatik yuklaydi.
 
@@ -98,10 +108,11 @@ samdu.uz/
 │   ├── app/
 │   │   ├── components/       layout/, home/, news/, announcements/, faculties/, ui/
 │   │   ├── composables/      useApiFetch, useContent, useFormatDate ...
-│   │   ├── layouts/          default.vue
-│   │   ├── pages/            index, news, announcements, faculties, about, search
+│   │   ├── layouts/          default.vue, blank.vue (login)
+│   │   ├── middleware/       auth (himoyalangan sahifalar), guest (login sahifasi)
+│   │   ├── pages/            index, news, announcements, faculties, about, search, login, admin
 │   │   ├── plugins/          $api ($fetch instance)
-│   │   ├── stores/           Pinia: accessibility, menu, ui
+│   │   ├── stores/           Pinia: auth, accessibility, menu, ui
 │   │   └── types/            API tiplari
 │   ├── i18n/locales/         uz.json, ru.json, en.json
 │   ├── server/api/           Nitro server route'lar
@@ -114,7 +125,8 @@ samdu.uz/
 
 ## 📚 Hujjatlar
 
-- [docs/RUNNING.md](docs/RUNNING.md) — ishga tushirish, buyruqlar, muammolar yechimi
+- [docs/RUNNING.md](docs/RUNNING.md) — ishga tushirish, login, buyruqlar, muammolar yechimi
+- [docs/AUTH.md](docs/AUTH.md) — login sahifasi, JWT oqimi, rollar, yangi foydalanuvchi qo'shish
 - [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) — arxitektura, komponentlar, DB sxemasi
 - [docs/API.md](docs/API.md) — endpointlar va misollar
 - [docs/SCRAPING.md](docs/SCRAPING.md) — samdu.uz dizayni va media fayllarini ko'chirish

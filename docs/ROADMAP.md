@@ -40,10 +40,12 @@ Muddat: **2025-03-01 — 2025-07-30**
 - [x] Til almashganda kontent avtomatik qayta yuklanadi
 - [x] Yangilik/e'lon/fakultet ichki sahifalari, qidiruv, sahifalash, filtrlar
 - [x] SEO: `useSeoMeta`, hreflang (`useLocaleHead`)
+- [x] Login sahifasi (`/login`), `auth`/`guest` middleware, `/admin` boshqaruv paneli
 
 ## Keyingi qadamlar
 
-- Admin panel (`/admin`, Nuxt layout + JWT cookie) yoki headless CMS
+- Admin panelda to'liq CRUD formalar (yangilik/e'lon/fakultet/menyu tahrirlash, rasm yuklash) — hozir Swagger orqali
+- Refresh token va httpOnly cookie (hozir access token JS o'qiy oladigan cookie'da)
 - Sahifalar (`PagesModule`) — "Rahbariyat", "Tuzilma" kabi statik sahifalar uchun
 - Rasm optimizatsiyasi (`@nuxt/image`, WebP), Redis kesh, sitemap.xml
 - E2E testlar (Playwright), CI/CD (GitHub Actions → Docker registry)

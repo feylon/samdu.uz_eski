@@ -22,6 +22,16 @@ samdu-frontend-1   healthy   0.0.0.0:3000->3000
 2. `backend` — `seed.js` (jadvallar + demo ma'lumot, idempotent) → `main.js`. Admin yo'q bo'lsa `.env` dagi `ADMIN_*` bilan yaratiladi.
 3. `frontend` — backend `healthy` bo'lgach ishga tushadi.
 
+### Tizimga kirish
+
+| Sahifa | Manzil |
+|--------|--------|
+| Login | http://localhost:3000/login |
+| Boshqaruv paneli | http://localhost:3000/admin |
+| Swagger (API orqali login) | http://localhost:4000/api/docs → `POST /auth/login` → **Authorize** |
+
+Login: `ADMIN_EMAIL` / `ADMIN_PASSWORD` (standart `admin@samdu.uz` / `Admin12345!`). Batafsil: [AUTH.md](AUTH.md).
+
 ### Muhit o'zgaruvchilari (`.env`)
 
 | O'zgaruvchi | Standart | Tavsif |
@@ -112,4 +122,6 @@ Frontend runtime sozlamalari (`NUXT_*` env orqali almashtiriladi):
 | Sayt ochiladi, lekin ma'lumot yo'q | `docker compose logs backend`, so'ng `curl localhost:4000/api/health` |
 | Brauzerda CORS xatosi | `CORS_ORIGINS` sayt manzilini o'z ichiga olganini tekshiring |
 | Rasm yuklanmaydi (`/uploads/...`) | `API_PUBLIC_URL` brauzerdan ochiladigan manzil ekanini tekshiring |
+| Login'da "Email yoki parol noto'g'ri" | `ADMIN_*` faqat **birinchi** ishga tushishda (admin yo'q bo'lsa) qo'llaniladi. Parolni o'zgartirgan bo'lsangiz, `docker compose down -v` bilan qaytadan boshlang yoki `POST /auth/change-password` |
+| Login'dan keyin yana `/login` ga qaytaradi | Token muddati tugagan (`JWT_EXPIRES_IN`) yoki `JWT_SECRET` o'zgargan — qayta kiring |
 | Seed qayta ishlamaydi | U faqat bo'sh jadvallarni to'ldiradi; qayta yuklash uchun `docker compose down -v` |
