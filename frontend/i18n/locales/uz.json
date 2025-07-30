@@ -145,5 +145,40 @@
     "prev": "Oldingi",
     "next": "Keyingi",
     "page": "{n}-sahifa"
+  },
+  "auth": {
+    "login": "Kirish",
+    "title": "Tizimga kirish",
+    "subtitle": "Administrator va muharrirlar uchun boshqaruv paneli",
+    "panelTitle": "SamDU kontent boshqaruvi",
+    "panelText": "Yangiliklar, e'lonlar, fakultetlar va menyularni boshqarish uchun hisobingizga kiring.",
+    "email": "Email",
+    "password": "Parol",
+    "submit": "Kirish",
+    "submitting": "Tekshirilmoqda...",
+    "invalid": "Email yoki parol noto'g'ri",
+    "error": "Server bilan bog'lanib bo'lmadi. Keyinroq urinib ko'ring.",
+    "logout": "Chiqish",
+    "showPassword": "Parolni ko'rsatish",
+    "backToSite": "Saytga qaytish"
+  },
+  "admin": {
+    "title": "Boshqaruv paneli",
+    "welcome": "Xush kelibsiz, {name}",
+    "role": "Rol",
+    "news": "Yangiliklar",
+    "announcements": "E'lonlar",
+    "faculties": "Fakultetlar",
+    "media": "Fayllar",
+    "recentNews": "So'nggi yangiliklar",
+    "published": "Chop etilgan",
+    "draft": "Qoralama",
+    "apiDocs": "API hujjatlari",
+    "apiDocsText": "Kontentni yaratish, tahrirlash va fayl yuklash Swagger UI orqali bajariladi. Tokeningiz bilan Authorize qiling.",
+    "roles": {
+      "admin": "Administrator",
+      "editor": "Muharrir",
+      "user": "Foydalanuvchi"
+    }
   }
 }

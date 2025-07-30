@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { Accessibility, Clock, Mail, Phone, Search } from '@lucide/vue';
+import { Accessibility, CircleUser, Clock, LogIn, Mail, Phone, Search } from '@lucide/vue';
 
 const a11y = useAccessibilityStore();
 const ui = useUiStore();
+const auth = useAuthStore();
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -39,6 +41,13 @@ const ui = useUiStore();
           <Search class="h-4 w-4" />
           <span class="hidden sm:inline">{{ $t('topbar.search') }}</span>
         </button>
+        <NuxtLink
+          :to="localePath(auth.isLoggedIn ? '/admin' : '/login')"
+          class="flex items-center gap-1.5 rounded-md px-2 py-1 transition hover:bg-white/10 hover:text-white"
+        >
+          <component :is="auth.isLoggedIn ? CircleUser : LogIn" class="h-4 w-4" />
+          <span class="hidden sm:inline">{{ auth.isLoggedIn ? $t('admin.title') : $t('auth.login') }}</span>
+        </NuxtLink>
         <span class="mx-1 hidden h-4 w-px bg-white/15 sm:block" />
         <LayoutLanguageSwitcher />
       </div>

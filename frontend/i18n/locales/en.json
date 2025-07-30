@@ -145,5 +145,40 @@
     "prev": "Previous",
     "next": "Next",
     "page": "Page {n}"
+  },
+  "auth": {
+    "login": "Sign in",
+    "title": "Sign in",
+    "subtitle": "Control panel for administrators and editors",
+    "panelTitle": "SamSU content management",
+    "panelText": "Sign in to manage news, announcements, faculties and menus.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Checking...",
+    "invalid": "Invalid email or password",
+    "error": "Could not reach the server. Please try again later.",
+    "logout": "Sign out",
+    "showPassword": "Show password",
+    "backToSite": "Back to site"
+  },
+  "admin": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {name}",
+    "role": "Role",
+    "news": "News",
+    "announcements": "Announcements",
+    "faculties": "Faculties",
+    "media": "Files",
+    "recentNews": "Recent news",
+    "published": "Published",
+    "draft": "Draft",
+    "apiDocs": "API documentation",
+    "apiDocsText": "Creating and editing content and uploading files is done via Swagger UI. Click Authorize and paste your token.",
+    "roles": {
+      "admin": "Administrator",
+      "editor": "Editor",
+      "user": "User"
+    }
   }
 }
